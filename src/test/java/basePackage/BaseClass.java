@@ -33,7 +33,7 @@ public class BaseClass {
 			opt.setExperimentalOption("excludeSwitches",Arrays.asList("enable-automation"));
 			opt.addArguments("--disableGpu");
 			driver.set(new ChromeDriver(opt));
-			System.out.println(Thread.currentThread().getId());
+			//System.out.println(Thread.currentThread().getId());
 		}
 		else if(browserName.equalsIgnoreCase("firefox")) {
 			FirefoxOptions opt = new FirefoxOptions();
@@ -41,7 +41,7 @@ public class BaseClass {
 			//opt.setExperimentalOption("excludeSwitches",Arrays.asList("enable-automation"));
 			opt.addArguments("--disableGpu");
 			driver.set(new FirefoxDriver(opt));
-			System.out.println(Thread.currentThread().getId());
+		//	System.out.println(Thread.currentThread().getId());
 
 		}
 		else {
