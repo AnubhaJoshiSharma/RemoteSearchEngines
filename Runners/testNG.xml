@@ -1,0 +1,14 @@
+<suite name = "Browser Launch TestSuite" parallel="methods" thread-count="2">
+	<test name="BrowserLaunchTestsOnChrome"> 
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.Upgrade.SearchEngineParallelTests.TestClass"></class>
+		</classes>
+	</test>
+	<test name="BrowserLaunchTestsOnFirefx"> 
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.Upgrade.SearchEngineParallelTests.TestClass"></class>
+		</classes>
+	</test>
+</suite>
