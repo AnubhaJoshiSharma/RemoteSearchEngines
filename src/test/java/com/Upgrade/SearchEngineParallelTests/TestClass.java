@@ -9,13 +9,14 @@ public class TestClass extends BaseClass {
 	public void googleSearchTest() {
 	System.out.println(getDriver().getTitle());
 	System.out.println("Inside test 1=== "+Thread.currentThread().getId());
+	System.out.println("Development branch");
 	}
 	@Test
 	public void SearchTest() {
 		System.out.println(getDriver().getCurrentUrl());
 		google.searchSomething("America");
 		System.out.println("Inside test 2 "+Thread.currentThread().getId());
-
+		System.out.println("Development branch");
 	}
 	
 
